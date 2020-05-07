@@ -1,0 +1,14 @@
+---
+---
+
+@import 'typeface';
+
+:root {
+	--bg: black;
+	--fg: white;
+}
+
+body {
+	background: var(--bg);
+	color: var(--fg);
+}

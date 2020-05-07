@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@400;800&display=swap');
+
+* {
+	font-family: "khula";
+	font-weight: 400;
+}
+
+h1 {
+	font-weight: 800;
+	margin-bottom: 0;
+}
+
+h1 + p {
+	margin-top: 0;
+}
