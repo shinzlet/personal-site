@@ -1,0 +1,44 @@
+<nav id="sidebar">
+  <a href={{ '/' | relative_url }}>
+    <h1>{{ site.title }}</h1>
+  </a>
+
+  <ul id="sidebar-links">
+    <li>
+      <h2>change theme</h2>
+
+      <span id="selection-wrapper">
+        <select id="theme-selector">
+          <option value="earthly" selected>earthly</option>
+          <option value="0">midnight</option>
+          <option value="8">coffee</option>
+          <option value="12">bright</option>
+          <option value="20">darkroom</option>
+        </select>
+      </span>
+    </li>
+
+    <li>
+      <a href={{ '/projects/' | relative_url }}>
+        <h2>projects</h2>
+      </a>
+      <ul>
+        <li>project 1</li>
+      </ul>
+    </li>
+
+    <li>
+      <a href={{ '/about/' | relative_url }}>
+        <h2>
+          about me
+        </h2>
+      </a>
+    </li>
+
+    <li>
+      <a href={{ '/contact/' | relative_url }}>
+        <h2>contact</h2>
+      </a>
+    </li>
+  </ul>
+</nav>

@@ -2,13 +2,41 @@
 ---
 
 @import 'typeface';
+@import 'sidebar';
 
 :root {
 	--bg: black;
-	--fg: white;
+	--fg: black;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 body {
 	background: var(--bg);
 	color: var(--fg);
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+#article-wrapper {
+	overflow-y: scroll;
+	float: left;
+	width: 70vw;
+	height: 100vh;
+}
+
+article {
+	width: 60%;
+	padding: 30px;
+	padding-top: 0px;
+	line-height: 2.2rem;
+}
+
+@media (max-width: 1000px) {
+	article {
+		width: 100%;
+	}
 }

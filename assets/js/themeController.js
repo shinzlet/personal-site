@@ -15,12 +15,17 @@ const seconds = date.getSeconds() + 60 * date.getMinutes() + 3600 * date.getHour
 const currentState = getState(seconds, states)
 updateColors(currentState)
 
-document.getElementById('time').addEventListener("input", e => {
-  const currentState = getState(e.target.value, states)
-  updateColors(currentState) 
-  const hour = Math.floor(e.target.value / 3600).toString().padStart(2, '0')
-  const min = (e.target.value % 60).toString().padStart(2, '0')
-  document.getElementById('disp').innerText = `${hour}:${min}`
+document.getElementById('theme-selector').addEventListener("input", e => {
+	if (e.target.value === 'earthly') {
+		const date = new Date()
+		const seconds = date.getSeconds() + 60 * date.getMinutes() + 3600 * date.getHours()
+		const currentState = getState(seconds, states)
+		updateColors(currentState)
+	} else {
+		const time = parseFloat(e.target.value) * 3600
+	   const currentState = getState(time, states)
+	   updateColors(currentState) 
+	}
 })
 
 function sweep() {

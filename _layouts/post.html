@@ -3,13 +3,18 @@
   <head>
     <meta charset="UTF-8">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href={{ "/assets/css/main.css" | relative_url }}>
   </head>
 
   <body>
     {% include sidebar.html %}
-    <article>
-      {{ content }}
-    </article>
+    <div id="article-wrapper">
+      <article>
+        {{ content }}
+        {% include footer.html %}
+      </article>
+    </div>
+
+    <script src={{ '/assets/js/themeController.js' | relative_url }}></script>
   </body>
 </html>

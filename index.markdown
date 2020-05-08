@@ -3,7 +3,7 @@ layout: post
 title: Seth Hinz
 ---
 
-# Home page!
+## Home page!
 Dolor iste numquam culpa voluptatibus dicta voluptate velit debitis. Voluptate
 distinctio vero earum iste sit. Sapiente voluptate error repellat quaerat qui,
 accusantium fugiat Repellat eum distinctio hic possimus similique Fugit.
